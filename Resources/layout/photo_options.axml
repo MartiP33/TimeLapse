@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1">
+        <TableLayout
+            android:stretchColumns="1"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <TableRow>
+                <TextView
+                    android:text="Interval"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/scrollView1"
+                    android:id="@+id/interval_text" />
+                <Button
+                    android:text="change"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/interval_change_button" />
+            </TableRow>
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+            <TableRow>
+                <TextView
+                    android:text="Shooting time"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shooting_time_text" />
+                <Button
+                    android:text="change"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/shooting_time_change_button" />
+            </TableRow>
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+            <TableRow>
+                <TextView
+                    android:text="Resolution"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/resolution_text" />
+                <Button
+                    android:text="change"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/resolution_change_button" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>
